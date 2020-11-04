@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title> Class 7 Homework</title>
+        
+
+        <style>
+            .item1 {
+    grid-area: header;
+
+}
+.item2 {
+    grid-area: left;
+
+}
+                 
+.item3 {
+    grid-area: middle;
+}
+
+.item4 {
+    grid-area: right;
+
+}
+
+.item5 {
+    grid-area: footer-left;
+
+}
+
+.item6 {
+    grid-area: footer-right;
+}
+
+.grid-container {
+    display: grid;
+    /* makes this a grid */
+    grid-template-areas: /*defines the general layout of the grid */
+    'header header header header'
+    
+    'left middle middle right'
+
+    'footer-left footer-left footer-right footer-right';
+  
+    grid-gap: 0.25em;
+  
+    padding: 0.3em;
+  
+    box-sizing: border-box;
+    background-color: #00a000;
+   
+}
+
+
+.grid-container>div {
+    
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+    font-size: 4vh;
+}
+
+h1 {
+    margin: 0;
+}
+
+html,
+body {
+    font-family: sans-serif;
+    font-size: 3vh;
+    color: #303030;
+}
+        </style>
+
+
+</head>
+  <body>
+
+  <div class="grid-container">
+  <div class="item1">Class 7 Homework
+  </div>
+  <div class="item2">Left
+  </div>
+  <div class="item3">Middle
+  </div>
+  <div class="item4">Right
+  </div>
+  <div class="item5">Footer Left
+  </div>
+  <div class="item6">Footer Right</div>
+  </div>
+</div>
+  </body>
+  </html>
