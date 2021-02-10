@@ -1,0 +1,252 @@
+html {
+    font-size: 1.8vh;
+    font-family: sans-serif;
+    color: white;
+    height: 50%;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    height: 50%;
+}
+
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.25em;
+    font-size: larger;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    opacity: .8;
+}
+
+nav a {
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    width: 20ch;
+    border: 3px solid transparent;
+    border-image: linear-gradient(90deg, darkgoldenrod, goldenrod, gold);
+    border-image-slice: 30%;
+    color: inherit;
+    text-shadow: 1px 1px black;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+nav>a:hover {
+    border-width: 0;
+    padding-top: calc(.5em + 3px);
+    padding-bottom: calc(.5em + 3px);
+    width: calc(20ch + 5px);
+    background: linear-gradient(90deg, darkgoldenrod, goldenrod, gold);
+}
+
+#home {
+    background-image: url("../images/image1.jpeg");
+    left: 0;
+    text-align: center;
+}
+
+article {
+    padding-top: 10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    text-align: center;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: left 0.5s ease-in-out;
+    left: -100vw;
+}
+
+article:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.2;
+    z-index: -1;
+}
+
+article+img {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 3;
+}
+
+@keyframes animate-img {
+    0% {
+        left: -100vw;
+    }
+    40% {
+        left: 0;
+    }
+    60% {
+        left: 0;
+    }
+    100% {
+        left: -100vw;
+    }
+}
+
+article:target+img {
+    animation-name: animate-img;
+    animation-duration: 1.5s;
+}
+
+article:target {
+    left: 0;
+}
+
+article:target~#home {
+    left: -100vw;
+}
+
+a {
+    color: darkgoldenrod;
+    text-decoration: underline;
+}
+
+.logo {
+    width: 30vw;
+    padding-top: 1.5em;
+    cursor: pointer;
+}
+
+#home .logo:hover {
+    transform: scale(1.2);
+}
+
+#home img.logo:hover {
+    transform: rotate(360deg);
+}
+
+#home .logo {
+    transition: transform 1s;
+}
+
+
+/*apparel page */
+
+#apparel:before {
+    background-image: url("../images/image0.jpeg");
+}
+
+.photobox { 
+    display: flex;
+}
+
+.photobox img {
+    width: 22ch;
+}
+
+.photobox figure {
+    font-size: .6em;
+    margin: 0;
+    margin-top: .3rem;
+    margin-right: 1em;
+    margin-bottom: 2em;
+}
+
+#apparel div {
+    text-align: left;
+    position: relative;
+    font-size: 15;
+}
+
+/*lookbook page */
+
+#lookbook:before {
+    background-image: url("../images/IMG_0286.JPG");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+
+
+
+
+
+/* about page */
+#about:before {
+    background-image: url(../images/image8.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+#about img {
+    height: 20em;
+    position: center;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+#p {
+    font-size: 24;
+    text-align: center;
+}
+
+/*contact page*/
+
+#contact:before {
+    background-image: url("../images/image2.jpeg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%
+}
+
+
+#contact img {
+    height: 1.5em;
+    vertical-align: middle;
+    padding-bottom: 0.25em;
+    padding-right: 0.25em;
+}
+
+#contact>div {
+    display: center;
+    flex-direction: column;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#contact a img {
+    transition: transform .25s;
+}
+
+#contact a:hover img {
+    transform: scale(1.2, 1.2);
+}
+

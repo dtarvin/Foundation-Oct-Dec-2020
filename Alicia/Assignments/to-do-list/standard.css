@@ -1,0 +1,47 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+body {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: aquamarine;
+}
+
+h1 {
+    margin-top: 10px;
+    background-color: lightcoral;
+    color: black;
+    border: 6px double black;
+    height: 60px;
+    padding-top: 20px;
+}
+
+input {
+    margin-top: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    border: 0;
+    color: black;
+    text-align: center;
+    box-shadow: 2px 5px 4px 2px;
+}
+
+input:focus {
+    outline: none;
+}
+
+li {
+    text-align: left;
+    font-size: 40px;
+    list-style: none;
+    margin: 0;
+}
+
+li:hover {
+    text-decoration: line-through;
+}
