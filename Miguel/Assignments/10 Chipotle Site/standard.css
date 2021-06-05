@@ -1,0 +1,189 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #333333;
+	font-family: 'Varela', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #656565;
+}
+
+
+.container{
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+}
+
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+.title h2{
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	font-size: 4em;
+	font-weight: 75;
+	color: #fff;
+
+}
+
+.title .subline{
+	font-size: 2em;
+	color: #fff;
+	font-weight: 100;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+
+
+}
+	
+
+/*********************************************************************************/
+/* parent                                                                  */
+/*********************************************************************************/
+
+#wrapper	{
+	background: #FFF;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+header	{
+	display: flexbox;
+	background: beige;
+	height: 15%;
+	
+}
+
+
+
+/*********************************************************************************/
+/* menu-top                                                                         */
+/*********************************************************************************/
+
+#menu-top	{
+	position: absolute;
+	top: 1em;
+	right: 0;
+}
+
+#menu-top ul	{
+	display: inline-block;
+}
+
+#menu-top li	{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu-top li a {
+	padding: .1em 1.5em;
+	letter-spacing: .1em;
+	text-decoration: none;
+	font-size: .5em;
+	color: brown;
+}
+
+#menu-top li:hover a, #menu li.active a{
+	color: white;
+}
+
+
+/*********************************************************************************/
+/* menu-bottom                                                                          */
+/*********************************************************************************/
+
+#menu-bottom	{
+	position: absolute;
+	top: 5em;
+	left: 15%;
+}
+
+#menu-bottom ul	{
+	display: inline-block;
+}
+
+#menu-bottom li	{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu-bottom li a {
+	padding: 1em 1.2em;
+	letter-spacing: .1em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: .6em;
+	color: brown;
+}
+
+#menu-bottom li:hover a, #menu li.active a{
+	color: white;
+}
+
+
+/* --------- Logo ---------*/
+#logo	{
+	display:inline;
+	vertical-align: top;
+	left: 150px;
+}
+
+#logo > img	{
+	height: 100px;
+	width: 100px;
+
+}
+
+/* --------- menu-more ---------*/
+
+#menu-bottom > .menu-more > a{
+	right: 0;
+	background-color: gray;
+	color: white;
+}
+
+/* --------- menu-banner ---------*/
+
+#menu-banner{
+	background-color: brown;
+	width: 100%;
+	height: 5%;
+	text-align: center;
+	
+
+}
+
+#menu-banner > a {
+	color: white;
+	padding:2em 0 0 0;
+
+}
+
+
+
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+section {
+	height: 100vh;
+	background-image: url('img/bg.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	padding: 7em 0em 5em 0em;
+	background-size: cover;
+	text-align: center;
+}

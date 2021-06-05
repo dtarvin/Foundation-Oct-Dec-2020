@@ -1,0 +1,66 @@
+.item1 {
+	grid-area: header;
+}
+
+.item2 {
+	grid-area: left;
+}
+
+.item3 {
+	grid-area: middle;
+}
+
+.item4 {
+	grid-area: right;
+}
+
+.item5 {
+	grid-area: footer-left;
+}
+
+.item6 {
+	grid-area: footer-right;
+}
+
+.grid-container {
+	display: grid;
+	/* makes this a grid */
+	grid-template-areas: /* defines the general layout of the grid */
+	'header header header header '
+	/* row 1 layout */
+	'left middle middle right'
+	/* row 2 layout */
+	'footer-left footer-left footer-right footer-right';
+	/* row 3 layout */
+	grid-gap: 0.25em;
+	/* gap between the grid items (NOT on the outside of the grid container) */
+	padding: 0.3em;
+	/* for a uniform looking grid, this is the same value as grid-gap.
+		  Preview this and then change this padding to 0 and preview it again to see
+		  the difference */
+	box-sizing: border-box;
+	background-color: #00a000;
+	/* Note how this background shows through the grid-gap */
+}
+/* This selects all the grid items to style them */
+
+.grid-container>div {
+	/* What do you think setting this grid item background-color with a 0.8 opacity does? 
+		  Preview this and then change the 0.8 to 1.0 to see what this is for. */
+	background-color: rgba(255, 255, 255, 0.8);
+	text-align: center;
+	padding-top: 0.7em;
+	padding-bottom: 0.7em;
+	font-size: 4vh;
+}
+
+h1 {
+	margin: 0;
+}
+
+html,
+body {
+	font-family: sans-serif;
+	font-size: 3vh;
+	color: #303030;
+}

@@ -1,0 +1,22 @@
+nav{
+    background-color: blue;
+    display: flexbox;
+}
+
+a{
+    text-decoration: none;
+    color: cyan;
+    word-spacing:30px;
+    font-size: 200px;
+}
+
+a:hover{
+    color:red;
+}
+
+
+h1{
+    font-size: 72px;
+    color:green;
+    text-decoration: underline;
+}

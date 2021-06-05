@@ -1,0 +1,152 @@
+html, body{
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background: #333333;
+	font-family: 'Varela', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #656565;
+}
+
+
+.container{
+	overflow: hidden;
+	margin: 0em auto;
+	width: 1200px;
+}
+
+
+/*********************************************************************************/
+/* Heading Titles                                                                */
+/*********************************************************************************/
+
+.title h2{
+	font-family: 'League Script', cursive;
+	text-transform: uppercase;
+	font-size: 7em;
+	font-weight: 75;
+	color: #fff;
+
+}
+
+.title .subline{
+	font-size: 1.7em;
+	color: #fff;
+	font-weight: 100;
+	font-family: 'Poppins', sans-serif;
+
+}
+	
+
+/*********************************************************************************/
+/* parent                                                                  */
+/*********************************************************************************/
+
+#wrapper	{
+	background: #FFF;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header-wrapper	{
+	background: #3A0978;
+}
+
+#header	{
+	position: relative;
+	padding: 3em 0em;
+}
+
+/*********************************************************************************/
+/* Logo                                                                          */
+/*********************************************************************************/
+
+#logo	{
+	position: absolute;
+	top: 1em;
+	left: 0;
+}
+
+#logo h1	{
+	color: #FFF;
+	letter-spacing: .4em;
+	text-transform: uppercase;
+	font-weight: 100;
+}
+
+
+/*********************************************************************************/
+/* Menu                                                                          */
+/*********************************************************************************/
+
+#menu	{
+	position: absolute;
+	top: 2em;
+	right: 0;
+}
+
+#menu ul	{
+	display: inline-block;
+}
+
+#menu li	{
+	display: block;
+	float: left;
+	text-align: center;
+}
+
+#menu li a {
+	padding: 1em 1.5em;
+	letter-spacing: .1em;
+	text-decoration: none;
+	font-size: 1em;
+	color: #FFF;
+}
+
+#menu li:hover a, #menu li.active a{
+	color: purple;
+}
+
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+#banner{
+	height: 100vh;
+	background-image: url('img/hero_img2.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+	padding: 7em 0em 5em 0em;
+	background-size: cover;
+	text-align: center;
+}
+
+.button{
+	display: inline-block;
+	padding: 0em 3em;
+	background: #F345A1;
+	border-radius: 30px;
+	letter-spacing: 0.20em;
+	line-height: 4em;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 1em;
+	color: #FFF;
+	transition-duration: 0.4s;
+	box-shadow: 0 8px 16px gray;
+}
+
+.button:hover {
+	margin-top: 1em;
+	box-shadow: 0 10px 20px #C73576, 0 0 25px #C73576;
+	background:linear-gradient(to right, #D3865A, #C73576, #BB0EAD);
+	cursor: pointer;
+}

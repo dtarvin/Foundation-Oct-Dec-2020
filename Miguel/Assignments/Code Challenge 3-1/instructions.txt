@@ -1,0 +1,13 @@
+Code Challenge #3-1
+
+In this simple code challenge, you'll see how a small background image can repeat to fill the entire page. This sort of background image is called a tile.
+
+Download this image:
+ [x] Create the project Code Challenge 3-1.
+ [x] Create the folder css, and in that folder create main.css.
+ [x] Create the folder images, and upload the tile image to it.
+ [x] Create the file index.html.
+ [x] Use the HTML button to create the initial HTML content.
+ [x] In main.css, create a selector block for body and add the background-image property to it.
+	 [x] No need for any other properties, as the defaults will repeat the background image.
+That's it, good luck!

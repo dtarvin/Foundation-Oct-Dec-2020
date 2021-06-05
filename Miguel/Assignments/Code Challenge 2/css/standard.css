@@ -1,0 +1,9 @@
+nav{
+    background-color: blue;
+    display: flexbox;
+}
+
+a{
+    color: cyan;
+    word-spacing:30px;
+}

@@ -1,0 +1,179 @@
+html, body {
+    margin: 0;
+    font-size: 1.8vh;
+    font-family: sans-serif;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    z-index: 2;
+}
+
+/* header logo means for the logo*/
+
+header #logo { 
+    height: 13vh;
+}
+
+/* home background is for the background images */
+
+#home {
+    background-image: url("../images/hw-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 100vh;
+}
+
+/*subheader is for a header that makes it stands out the most */
+
+#subheader {
+    position: fixed;
+    top:10vh;
+    left: 0;
+    width: 100%;
+    background-color: #543a2d;
+    color: white;
+    text-align: center;
+    padding: 0.7em;
+    text-transform: uppercase;
+}
+
+/*subheader icon will change for the font and make it middle as well as making it a small amount of margin */
+
+#subheader i {
+    font-size: 2em;
+    vertical-align: middle;
+    margin-bottom: 0.1em;
+    margin-left: 0.2em;
+}
+
+/* displaying the anchor tags */ 
+
+nav {
+    display: flex;
+    align-items: flex-end;
+}
+
+/* making the nav anchor tags spaces apart where it needs to be */
+
+nav>a {
+    color: #543a2d;
+    text-decoration: none;
+    margin-right: 2ch;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+/* option tags are for a different nav tag to keep it seprate from the main nav anchor tag as well as
+stacking ontop of each other */
+
+#options {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3vw;
+    margin-bottom: 0.5em;
+    text-align: right;
+}
+
+/* no wrap white-space means it wraps all the text to keep on scrolling to the right */
+
+#options> span {
+    white-space: nowrap;
+}
+
+/*this one makes the margin towards the bottom with a smaller size */
+
+#options>span:nth-of-type(1) {
+    margin-bottom: 1.5em;
+}
+
+/*this selects the first span tag in the #options div */
+
+#options>span:nth-of-type(1)>a {
+    color: #543a2d;
+    text-decoration: none;
+    margin-right: 2ch;
+}
+
+/* made a space between the sign in / register tag, that's why there is 2 different 
+margin to make the space */
+
+#options>span:nth-of-type(1)>a:nth-child(3) {
+    margin-right: 1ch;
+    margin-left: 2.5ch;
+}
+
+/* this one is creating for the SECOND span div tag */
+
+#options>span:nth-of-type(2)>a {
+    margin-right: 0.5ch;
+    background-color: #d2d2ca;
+    color: #543a2d;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 1em;
+}
+
+/* options>a changes the colors to the last options for the search bar, locations and order now */
+
+#options>a {
+    margin-top: 1em;
+    text-decoration: none;
+    color: #543a2d;
+}
+
+/* setting our main content to be centerd using left, to: 50%, transform: transform(-50%,-50%), and whitespaces nowrap */
+
+main {
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* main h1 is the MAIN HEADER for "Just the way you like it" */
+
+main h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* page right is for making the last of the MAIN words 50% top going down of the screen and left 100% 
+going left of the screen to make it a full screen */
+
+.page-right {
+    font-size: 5vh;
+    position: fixed;
+    top: 50%;
+    left: 100%;
+    transform: translate(-50%,-50%);
+    border-radius: 3.5vh;
+    background-color: #ffffffcc;
+    height: 7vh;
+    width: 7vh;
+    color: #543a2d;
+    text-align: center;
+}
+
+/* page right icon is making the arrow on the side in the middle */ 
+
+.page-right i {
+    line-height: 7vh;
+    padding-right: 0.3em;
+    vertical-align: middle;
+}

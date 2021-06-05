@@ -1,0 +1,42 @@
+
+section{
+    background-color: grey;
+    width: 960px;
+    height: auto;
+    margin: 0 auto 200px;
+    padding: 20px;
+    display: block;
+    clear: both;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+}
+
+div {
+    background-color: #ebf;
+    width: 200px;
+    height: 200px;;
+    margin: 0 10px 0 10px;
+}
+/* section 1*/
+.sect1 img {
+    float: right;
+}
+
+.sect2 img {
+    float: left;
+}
+
+.box{
+    float: right;
+}
+
+#img2 {
+    float: none;
+}
+
+#img3{
+    float: inline-end;
+}

@@ -1,0 +1,33 @@
+#outer-grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+  #outer-grid > div {
+    background-color: red;
+    color: white;
+    font-size: 4vw;
+    padding: 10px;
+  }
+
+  #inner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+  }
+
+  #inner-grid > div {
+    background: salmon;
+    padding: 10px;
+  }
+
+  .out-img {
+      height: 400px;
+      width: 400px;
+  }
+
+  .in-img {
+    height: 200px;
+    width: 200px;  
+  }

@@ -1,0 +1,85 @@
+
+/**/
+/* week 2 homework "Challenge 4"
+
+color-schemes: 
+Version 1
+
+
+Version 2
+
+*/
+
+html body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 3vh;
+    overflow: hidden;
+
+}
+
+
+.main {
+    background-image: url('../images/Cats-and-Dogs.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center bottom;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+}
+
+.links {
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #808080;
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    padding: 1.5vh;
+    margin: 0;
+    list-style-type: none;  
+
+}
+
+
+.links a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 1vh 2vh;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.links a:hover {
+  color: black;
+}
+
+
+.links a.active {
+  color: white;
+}
+
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+    
+}
+
+.subtitle{
+    font-size: 1.5rem;
+    text-align: center;
+    
+}
+
+.title {
+    font-family: 'Gloria Hallelujah', cursive;
+}

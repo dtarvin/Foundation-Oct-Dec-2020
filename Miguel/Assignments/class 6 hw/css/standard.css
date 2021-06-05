@@ -1,0 +1,81 @@
+/**/
+/* class 6 hw */
+
+
+html, 
+body {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 15% 60% 25%;
+    grid-template-areas: 
+    "header header header header"
+    "sectA main main sectB"
+    "footerL footerL footerR footerR"
+}
+
+h1 {
+    font-size: 80px;
+}
+
+.gridI{
+    padding: 0;
+    text-align: center;
+    
+}
+
+header {
+    grid-area: header;
+    background-color: #91c8ff;
+
+}
+
+header h1{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#sectA {
+    grid-area: SectA;
+    background-color: #b3d8fd;
+
+}
+
+#sectA h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding:0;
+    margin:0;
+}
+
+#sectB {
+    grid-area: SectB;
+    background-color: #5e86af;
+
+}
+
+#sectB h1 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding:0;
+    margin:0;
+}
+
+article {
+    grid-area: main;
+    background-color: #6d9fd2;
+}
+
+#footerL {
+    grid-area: footerL;
+    background-color:#91c8ff;
+}
+
+#footerR {
+    grid-area: footerR;
+    background-color:#b3d8fd;
+}
